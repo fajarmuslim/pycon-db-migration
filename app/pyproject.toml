@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "skill-task-mle-cron-job"
+version = "0.1.0"
+description = ""
+authors = ["fajarmuslim <13517149@std.stei.itb.ac.id>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+alembic = "^1.8.1"
+pydantic = {extras = ["dotenv"], version = "^1.10.2"}
+pytz = "^2022.2.1"
+psycopg2 = "^2.9.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

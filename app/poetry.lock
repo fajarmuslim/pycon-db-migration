@@ -1,0 +1,149 @@
+[[package]]
+name = "alembic"
+version = "1.8.1"
+description = "A database migration tool for SQLAlchemy."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+Mako = "*"
+SQLAlchemy = ">=1.3.0"
+
+[package.extras]
+tz = ["python-dateutil"]
+
+[[package]]
+name = "greenlet"
+version = "1.1.3"
+description = "Lightweight in-process concurrent programming"
+category = "main"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
+
+[package.extras]
+docs = ["sphinx"]
+
+[[package]]
+name = "mako"
+version = "1.2.2"
+description = "A super-fast templating language that borrows the best ideas from the existing templating languages."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+MarkupSafe = ">=0.9.2"
+
+[package.extras]
+babel = ["babel"]
+lingua = ["lingua"]
+testing = ["pytest"]
+
+[[package]]
+name = "markupsafe"
+version = "2.1.1"
+description = "Safely add untrusted strings to HTML/XML markup."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "psycopg2"
+version = "2.9.3"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "pydantic"
+version = "1.10.2"
+description = "Data validation and settings management using python type hints"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+python-dotenv = {version = ">=0.10.4", optional = true, markers = "extra == \"dotenv\""}
+typing-extensions = ">=4.1.0"
+
+[package.extras]
+dotenv = ["python-dotenv (>=0.10.4)"]
+email = ["email-validator (>=1.0.3)"]
+
+[[package]]
+name = "python-dotenv"
+version = "0.21.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
+name = "pytz"
+version = "2022.2.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "sqlalchemy"
+version = "1.4.41"
+description = "Database Abstraction Library"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7"
+
+[package.dependencies]
+greenlet = {version = "!=0.4.17", markers = "python_version >= \"3\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\")"}
+
+[package.extras]
+aiomysql = ["greenlet (!=0.4.17)", "aiomysql"]
+aiosqlite = ["typing_extensions (!=3.10.0.1)", "greenlet (!=0.4.17)", "aiosqlite"]
+asyncio = ["greenlet (!=0.4.17)"]
+asyncmy = ["greenlet (!=0.4.17)", "asyncmy (>=0.2.3,!=0.2.4)"]
+mariadb_connector = ["mariadb (>=1.0.1,!=1.1.2)"]
+mssql = ["pyodbc"]
+mssql_pymssql = ["pymssql"]
+mssql_pyodbc = ["pyodbc"]
+mypy = ["sqlalchemy2-stubs", "mypy (>=0.910)"]
+mysql = ["mysqlclient (>=1.4.0,<2)", "mysqlclient (>=1.4.0)"]
+mysql_connector = ["mysql-connector-python"]
+oracle = ["cx_oracle (>=7,<8)", "cx_oracle (>=7)"]
+postgresql = ["psycopg2 (>=2.7)"]
+postgresql_asyncpg = ["greenlet (!=0.4.17)", "asyncpg"]
+postgresql_pg8000 = ["pg8000 (>=1.16.6,!=1.29.0)"]
+postgresql_psycopg2binary = ["psycopg2-binary"]
+postgresql_psycopg2cffi = ["psycopg2cffi"]
+pymysql = ["pymysql (<1)", "pymysql"]
+sqlcipher = ["sqlcipher3-binary"]
+
+[[package]]
+name = "typing-extensions"
+version = "4.3.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "9429a2b44697fad00b90201920cea56cd7266cea45bb927b708f3415aff4d468"
+
+[metadata.files]
+alembic = []
+greenlet = []
+mako = []
+markupsafe = []
+psycopg2 = []
+pydantic = []
+python-dotenv = []
+pytz = []
+sqlalchemy = []
+typing-extensions = []
